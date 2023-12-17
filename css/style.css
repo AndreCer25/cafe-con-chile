@@ -3,14 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*Estilos del Main*/
-}
-* #main {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*Tipografía header, body y footer*/
@@ -36,44 +28,43 @@
 /*Estilos del Nav*/
 #header {
   width: 100%;
-  height: 100px;
+  height: auto;
 }
 
-#nav {
+.navbar {
   background-color: #14B6CC;
-  font-size: 30px;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 50px;
 }
 
-li, a {
+.navbar-nav .nav-link.active {
+  color: #52198B;
+}
+
+.navbar a:hover {
+  color: #E6701A;
+}
+
+.navbar a {
   display: inline-block;
   list-style: none;
   text-decoration: none;
   color: white;
-}
-
-#nav ul li a {
   margin-left: 20px;
   font-size: 20px;
 }
 
-.navRedes {
+/*Estilos del Main*/
+#main {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 
 #slider {
-  width: 100%;
-  height: auto;
-}
-
-.sliderHome img {
-  height: auto;
   width: 100%;
 }
 
@@ -84,6 +75,16 @@ li, a {
   padding: 20px 50px;
   font-size: 20px;
   font-family: josefin sans;
+}
+
+.botones a {
+  text-decoration: none;
+  color: white;
+}
+
+.botones:hover {
+  background-color: #E6701A;
+  transition: 0.1s;
 }
 
 #seccion-1 {
@@ -176,9 +177,30 @@ li, a {
   padding-top: 30px;
 }
 
+#carouselExampleAutoplaying {
+  width: 70%;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  left: -40px;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  right: -40px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.256);
+}
+
 /*Estilos de Experiencias*/
 #experiencias {
   padding: 30px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .categorias {
@@ -192,11 +214,11 @@ li, a {
 }
 
 #entradasBlog {
+  padding: 0 20px 20px;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(2, 2fr);
   gap: 20px;
-  align-items: center;
   grid-template-areas: "entrada1 entrada2 entrada3" "entrada4 entrada5 0";
 }
 
@@ -222,7 +244,46 @@ li, a {
 
 .entradas img {
   width: 100%;
-  height: 50%;
+  height: 85%;
+}
+
+.tituloEntrada {
+  text-align: center;
+}
+
+#banner-experiencias {
+  width: 100%;
+  height: 400px;
+  background-image: url(../imagenes/banner-experiencias.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-banner-experiencias {
+  width: 100%;
+  color: white;
+  font-weight: 900;
+  -webkit-text-stroke: rgba(0, 0, 0, 0.753);
+  -webkit-text-stroke-width: 0.1px;
+  display: flex;
+  justify-content: center;
+}
+
+#seccion2Experiencias {
+  width: 100%;
+  height: auto;
+  padding: 0 20px 20px;
+}
+
+.seccion2-Box1 {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*Estilos Footer*/

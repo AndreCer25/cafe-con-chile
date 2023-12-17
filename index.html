@@ -7,10 +7,15 @@
         <!--LIBRERÍA DE FONT AWESOME-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!--LIBRERÍA DE GOOGLE FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lobster+Two&display=swap" rel="stylesheet">
         
+        <!--LIBRERIA BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <!--ESTILOS CSS-->
         <link rel="stylesheet" href="css/style.css">
         
         <title>Café con Chile</title>
@@ -18,35 +23,57 @@
 
     <body id="body">
         <!--Inicia Header-->
-        <header id="header">
-            <nav id="nav" class="navBar" class="">
-                <a href="index.html">Logo</a>
-                <ul>
-                    <li><a href="./paginas/quienes-somos.html">Quiénes somos</a></li>
-                    <li><a href="./paginas/experiencias.html">Experiencias</a></li>
-                    <li><a href="./paginas/Glosario.html">Glosario</a></li>
-                    <li><a href="./paginas/Contacto.html">Contacto</a></li>
-                </ul>
-                <article class="navRedes">          
-                    <a href="https://www.facebook.com/cafecnchile"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/cafecnchile/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@cafecnchile"><i class="fa-brands fa-tiktok"></i></a>
-                </article>
-            </nav>
+       <header id="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Logo</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse w-100 justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link" href="./paginas/experiencias.html">Experiencias</a>
+                      <a class="nav-link" href="./paginas/quienes-somos.html">Quiénes somos</a>
+                      <a class="nav-link" href="./paginas/glosario.html">Glosario</a>
+                      <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                    </div>
+                    <article class="navRedes">          
+                        <a href="https://www.facebook.com/cafecnchile"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cafecnchile/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@cafecnchile"><i class="fa-brands fa-tiktok"></i></a>
+                    </article>
+                  </div>
+                </div>
+              </nav>
         </header>
         
         <!--Inicia el main-->
         <main id="main">
             <section id="slider">
-                <article class="sliderHome">
-                    <img src="imagenes/banner-principal.jpg" alt="">
-                </article>
+            <!--Carrusel Bootstrap-->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imagenes/banner-principal-01.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/banner-principal-02.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/banner-principal-03.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/banner-principal-04.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
             </section>
            
             <section id="seccion-1">
                 <article class="seccion-1-Box1">
                     <p>Somos una pareja internacional, compuesta por dos <br> hermosas y grandes culturas: mexicana y colombiana.</p>
-                    <button class="botones"><a href="paginas/Quienes-somos.html">¿Quiénes somos?</a></button>
+                    <button class="botones"><a href="./paginas/quienes-somos.html">¿Quiénes somos?</a></button>
                 </article>                                 
                 <article class="seccion-1-Box2">
                     <hr class="separador">
@@ -67,13 +94,38 @@
 
             <section id="seccion-2">
                 <article class= "seccion-2-Box1">
-                <button class="botones"><a href="paginas/Experiencias.html">Nuestros viajes</a></button>
+                <button class="botones"><a href="./paginas/experiencias.html">Nuestros viajes</a></button>
                 <p>Queremos compartir nuestras experiencias contigo</p>
                 </article>                                 
                 <article class="seccion-2-Box2">
                     <hr class="separador">
                     <h2 class="titulos">Nuestro hobbie más preciado</h2>
-                    <img src="imagenes/carrusel-01.jpg" alt="">
+
+                    <!--Carrusel Bootstrap-->
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./imagenes/carrusel-01.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./imagenes/carrusel-02.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./imagenes/carrusel-03.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./imagenes/carrusel-04.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                 </article>
             </section>
         </main> 
@@ -92,5 +144,7 @@
                 <a href="https://www.tiktok.com/@cafecnchile"><i class="fa-brands fa-tiktok"></i></a>
             </article>
         </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
