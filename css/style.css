@@ -61,6 +61,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -90,12 +91,15 @@
 #seccion-1 {
   width: 100%;
   height: auto;
-  padding: 0 20px 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .seccion-1-Box1 {
   width: 100%;
-  height: 120px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -111,7 +115,7 @@
 
 .seccion-1-Box2 {
   width: 100%;
-  height: 120px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -143,8 +147,7 @@
   width: 100%;
   color: white;
   font-weight: 900;
-  -webkit-text-stroke: rgba(0, 0, 0, 0.753);
-  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke: 0.1px rgba(0, 0, 0, 0.753);
   display: flex;
   justify-content: center;
 }
@@ -153,11 +156,14 @@
   width: 100%;
   height: auto;
   padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .seccion-2-Box1 {
   width: 100%;
-  height: 150px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -197,6 +203,8 @@
 
 /*Estilos de Experiencias*/
 #experiencias {
+  width: 100%;
+  height: auto;
   padding: 30px 0 50px 0;
   display: flex;
   justify-content: center;
@@ -210,16 +218,17 @@
   color: white;
   border-radius: 10px;
   padding: 10px;
-  margin: 0 210px 0 250px;
 }
 
 #entradasBlog {
+  height: auto;
   padding: 0 20px 20px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-template-rows: repeat(2, 2fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-  grid-template-areas: "entrada1 entrada2 entrada3" "entrada4 entrada5 0";
+  grid-template-areas: "entrada1 entrada2 entrada3" "entrada4 entrada5 .";
 }
 
 .entrada1 {
@@ -244,7 +253,19 @@
 
 .entradas img {
   width: 100%;
-  height: 85%;
+  height: auto;
+  object-fit: cover;
+}
+
+.entradas {
+  position: relative;
+}
+
+.categorias {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .tituloEntrada {
@@ -276,11 +297,14 @@
   width: 100%;
   height: auto;
   padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .seccion2-Box1 {
   width: 100%;
-  height: 120px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -290,12 +314,12 @@
 #footer {
   margin-top: auto;
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: #D9DDDE;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 10px 20px;
 }
 
 .footerLogo a {
@@ -318,11 +342,60 @@
 }
 
 /*Breackpoints*/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #entradasBlog {
     grid-template-columns: 1fr;
     grid-template-rows: 5, 1fr;
     grid-template-areas: "entrada1" "entrada2" "entrada3" "entrada4" "entrada5";
+  }
+  #footer {
+    flex-direction: column;
+  }
+  #banner-inicio {
+    height: 200px;
+  }
+  #banner-experiencias {
+    height: 200px;
+  }
+  .seccion-1-Box2 {
+    flex-direction: column;
+  }
+  .seccion2-Box1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .botonViajes {
+    order: 1;
+  }
+  .seccion-2-Box2 {
+    flex-direction: column;
+  }
+  .seccion-1-Box3 {
+    flex-direction: column;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  #entradasBlog {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3, 1fr;
+    grid-template-areas: "entrada1 entrada2" "entrada3 entrada4" "entrada5 .";
+  }
+}
+@media (max-width: 768px) {
+  .seccion-1-Box3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .seccion-1-Box1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .seccion-2-Box1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .titulos {
+    text-align: center;
   }
 }
 
