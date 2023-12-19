@@ -461,6 +461,18 @@
   .seccion-1-Box3 {
     flex-direction: column;
   }
+  .nosotros1 {
+    flex-direction: column;
+  }
+  .nosotros2 {
+    flex-direction: column;
+  }
+  .fotos {
+    width: 50%;
+  }
+  .fotoCarlos {
+    order: 1;
+  }
 }
 @media (min-width: 600px) and (max-width: 768px) {
   #entradasBlog {
