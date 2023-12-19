@@ -341,15 +341,7 @@ align-items: center;}
 
     .seccion-2-Box2 {flex-direction: column;}
 
-    .seccion-1-Box3 {flex-direction: column;}
-
-    .nosotros1 {flex-direction: column;}
-
-    .nosotros2 {flex-direction: column;}
-
-    .fotos {width: 50%;}
-
-    .fotoCarlos {order: 1;}}
+    .seccion-1-Box3 {flex-direction: column;}}
 
 @media (min-width:600px) and (max-width: 768px) {
     #entradasBlog {
@@ -370,7 +362,15 @@ align-items: center;}
     .seccion-2-Box1 {flex-direction: column;
         text-align: center;}
 
-    .titulos {text-align: center;}}
+    .titulos {text-align: center;}
+
+    .nosotros1 {flex-direction: column;}
+
+    .nosotros2 {flex-direction: column;}
+
+    .fotos {width: 50%;}
+
+    .fotoCarlos {order: 1;}}
 
 @media (max-width:420px) {
     .titulos {font-size: 30px;}
