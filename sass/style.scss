@@ -16,18 +16,24 @@
 
 /*Estilos del Body*/
 #body {max-width: 1440px;
-    margin: 0 auto;}
+    margin: 0 auto;
+    padding-top: 70px;}
 
 /*Estilos del Nav*/
 #header {width: 100%; height: auto;}
 
 .navbar {background-color: #14B6CC;
     width: 100%;
-    padding: 0 50px;}
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 5;}
 
-.navbar-nav .nav-link.active {color:#52198B}
+.navbar-nav .nav-link.active {background-color: #E6701A;
+    color: white;
+    border-radius: 3px; }
 
-.navbar a:hover {color: #E6701A;}
+.navbar a:hover {color:#52198B;}
 
 .navbar a{
     display: inline-block;
@@ -96,7 +102,8 @@
 
 .tiktok-embed{overflow: scroll;}
 
-#banner-inicio {width: 100%;
+#banner-inicio {position: relative;
+    width: 100%;
     height: 400px;
     background-image: url(../imagenes/banner-inicio.jpg);
     background-repeat: no-repeat;
@@ -110,7 +117,8 @@
     font-weight: 900;
     -webkit-text-stroke: 0.1px rgba(0, 0, 0, 0.753);
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+    z-index: 2;}
 
 #seccion-2 {width: 100%;
     height: auto;
@@ -196,7 +204,8 @@
 
 .tituloEntrada {text-align: center;}
 
-#banner-experiencias {width: 100%;
+#banner-experiencias {position: relative;
+    width: 100%;
     height: 400px;
     background-image: url(../imagenes/banner-experiencias.jpg);
     background-repeat: no-repeat;
@@ -253,7 +262,8 @@
     padding: 0 20px 0 20px;
     gap: 30px;}
 
-#bannerNosotros {width: 100%;
+#bannerNosotros {position: relative;
+    width: 100%;
     height: 400px;
     background-image: url(../imagenes/banner-nosotros.jpg);
     background-repeat: no-repeat;
@@ -276,6 +286,67 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;}
+
+// Estilos de Glosario    
+#glosario {width: 100%;
+    height: auto;
+    padding: 30px 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;}
+
+#definiciones {height: auto;
+        padding: 0 20px 20px;
+        width: 100%;
+        display: grid;}
+
+.accordion-button {background-color: #E6701A;
+    color: white;}
+
+.accordion-button:not(.collapsed) {color: white;
+    background-color: #E6701A;}
+
+.accordion-item {background-color: #d9ddde2b;}
+
+#banner-glosario {position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../imagenes/banner-glosario.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;}
+
+.banners:before {content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#52198b38; /* Color con opacidad */}
+
+#seccionCarrusel {width: 100%;
+    height: auto;
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;}
+
+.seccionCarrusel-Box1 {width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;}
+
+#glosarioCarrusel {width: 100%;
+    height: auto;
+    padding: 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
 
 /*Estilos Footer*/
 #footer {margin-top: auto;
