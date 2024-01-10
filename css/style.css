@@ -36,10 +36,14 @@
 .navbar {
   background-color: #14B6CC;
   width: 100%;
-  padding: 15px 50px;
+  height: auto;
   position: fixed;
   top: 0;
   z-index: 5;
+}
+
+.navbar.navbar-expand-lg {
+  padding: 0;
 }
 
 .navbar-nav .nav-link.active {
@@ -59,6 +63,20 @@
   color: white;
   margin-left: 20px;
   font-size: 20px;
+}
+
+.navbar-brand {
+  width: 15%;
+  height: auto;
+}
+
+.navbar img {
+  width: 70%;
+  height: auto;
+}
+
+.container-fluid {
+  padding: 0 0;
 }
 
 /*Estilos del Main*/
@@ -110,6 +128,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
+}
+
+.seccion-1-Box1 p {
+  width: 50%;
 }
 
 .separador {
@@ -214,7 +237,7 @@
 #experiencias {
   width: 100%;
   height: auto;
-  padding: 30px 0 50px 0;
+  padding: 80px 0 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -314,7 +337,7 @@
 #quienesSomos {
   width: 100%;
   height: auto;
-  padding: 30px 0 50px 0;
+  padding: 80px 0 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -351,7 +374,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 20px 0 20px;
+  padding: 20px 20px 0;
   gap: 30px;
 }
 
@@ -374,7 +397,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .nosotros3 {
@@ -389,11 +412,11 @@
 #glosario {
   width: 100%;
   height: auto;
-  padding: 30px 15px 0;
+  padding: 80px 20px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
 
 #definiciones {
@@ -469,17 +492,17 @@
 #contacto {
   width: 100%;
   height: auto;
-  padding: 30px 15px 0;
+  padding: 80px 20px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
 
 #formulario {
   width: 100%;
   height: auto;
-  padding: 20px 50px 30px;
+  padding: 0 50px 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -514,7 +537,7 @@
   background-color: #D9DDDE;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   padding: 10px 20px;
 }
 
@@ -525,19 +548,26 @@
 }
 
 .footerLogo {
+  width: 20%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
-.footerTexto p {
+.footerLogo img {
+  width: 50%;
+}
+
+.footerTexto {
+  width: 60%;
   font-size: 20px;
   color: black;
   padding: 5px;
+  justify-content: center;
   text-align: center;
 }
 
 .footerRedes a {
+  width: 20%;
   font-size: 30px;
   color: black;
   width: 60px;
@@ -556,6 +586,9 @@
   .navbar-toggler {
     border: none;
   }
+  .navRedes {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   #entradasBlog {
@@ -563,8 +596,23 @@
     grid-template-rows: 5, 1fr;
     grid-template-areas: "entrada1" "entrada2" "entrada3" "entrada4" "entrada5";
   }
+  #experiencias {
+    padding-top: 30px;
+  }
+  #quienesSomos {
+    padding-top: 30px;
+  }
+  #glosario {
+    padding-top: 30px;
+  }
+  #contacto {
+    padding-top: 30px;
+  }
   #footer {
     flex-direction: column;
+  }
+  .footerLogo {
+    display: none;
   }
   #banner-inicio {
     height: 200px;
@@ -573,6 +621,9 @@
     height: 200px;
   }
   #bannerNosotros {
+    height: 200px;
+  }
+  #banner-glosario {
     height: 200px;
   }
   .seccion-1-Box2 {
@@ -598,8 +649,40 @@
     grid-template-rows: 3, 1fr;
     grid-template-areas: "entrada1 entrada2" "entrada3 entrada4" "entrada5 .";
   }
+  #experiencias {
+    padding-top: 30px;
+  }
+  #quienesSomos {
+    padding-top: 30px;
+  }
+  #glosario {
+    padding-top: 30px;
+  }
+  #contacto {
+    padding-top: 30px;
+  }
+  .navbar img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 768px) {
+  #experiencias {
+    padding-top: 30px;
+  }
+  #quienesSomos {
+    padding-top: 30px;
+  }
+  #glosario {
+    padding-top: 30px;
+  }
+  #contacto {
+    padding-top: 30px;
+  }
+  .navbar img {
+    width: 100%;
+    height: auto;
+  }
   .seccion-1-Box3 {
     flex-direction: column;
     align-items: center;
@@ -607,6 +690,9 @@
   .seccion-1-Box1 {
     flex-direction: column;
     text-align: center;
+  }
+  .seccion-1-Box1 p {
+    width: 100%;
   }
   .seccion-2-Box1 {
     flex-direction: column;
@@ -622,13 +708,29 @@
     flex-direction: column;
   }
   .fotos {
-    width: 50%;
+    width: 60%;
   }
   .fotoCarlos {
     order: 1;
   }
 }
 @media (max-width: 420px) {
+  #experiencias {
+    padding-top: 30px;
+  }
+  #quienesSomos {
+    padding-top: 30px;
+  }
+  #glosario {
+    padding-top: 30px;
+  }
+  #contacto {
+    padding-top: 30px;
+  }
+  .navbar img {
+    width: 100%;
+    height: auto;
+  }
   .titulos {
     font-size: 30px;
   }
