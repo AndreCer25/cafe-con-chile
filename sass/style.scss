@@ -348,6 +348,39 @@
     align-items: center;
     text-align: center;}
 
+// Estilos de Contacto
+#contacto {width: 100%;
+    height: auto;
+    padding: 30px 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;}
+
+#formulario {width: 100%;
+    height: auto;
+    padding: 20px 50px 30px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    text-align: left;}
+
+.btn-primary {
+    color:white;
+    background-color:#E6701A;
+    border-color:#E6701A;}
+
+.btn-primary:hover {
+    background-color:#52198B;
+    border-color:#52198B;}
+
+.btn-primary:active {
+    background-color:#52198B;
+    border-color:#52198B;}
+
+.form-control {background-color: #d9ddde5b;}
+
+
 /*Estilos Footer*/
 #footer {margin-top: auto;
     width: 100%;
