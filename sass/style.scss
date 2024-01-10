@@ -96,11 +96,10 @@
 
 .seccion-1-Box1 p {width: 50%;}
 
-.separador {color: #E6701A;
-    border-style:double;
-    width: 20%;
-    align-self: center;
-    margin-top: 4px;}
+.separador {background: #E6701A;
+    height: 2px;
+    width: 20vw;
+    margin: 0 auto;}
 
 .seccion-1-Box2 {width: 100%;
     height: auto;
@@ -183,7 +182,7 @@
     padding: 10px;}
 
 #entradasBlog {height: auto;
-    padding: 0 20px 20px;
+    padding: 20px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -261,7 +260,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 20px 0 20px;
+    padding: 20px 20px 0 20px;
     gap: 30px;}
 
 .fotos {width: 30%;
@@ -309,6 +308,10 @@
     flex-direction: column;
     text-align: left;}
 
+.glosario1 {width: 100%;
+    height: auto;
+    padding-top: 20px;}
+
 #definiciones {height: auto;
         padding: 0 20px 20px;
         width: 100%;
@@ -342,7 +345,7 @@
 
 #seccionCarrusel {width: 100%;
     height: auto;
-    padding: 0 20px 20px;
+    padding: 20px 20px 20px;
     display: flex;
     flex-direction: column;
     gap:20px;}
@@ -369,6 +372,10 @@
     justify-content: center;
     flex-direction: column;
     text-align: left;}
+
+.contacto1 {width: 100%;
+    height: auto;
+    padding-top: 20px;}
 
 #formulario {width: 100%;
     height: auto;
