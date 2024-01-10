@@ -642,6 +642,9 @@
   .seccion-1-Box3 {
     flex-direction: column;
   }
+  #formulario {
+    padding: 0 20px 30px;
+  }
 }
 @media (min-width: 600px) and (max-width: 768px) {
   #entradasBlog {
@@ -726,6 +729,12 @@
   }
   #contacto {
     padding-top: 30px;
+  }
+  #nosotrosCarrusel {
+    text-align: center;
+  }
+  .container-fluid {
+    padding: 10px 0;
   }
   .navbar img {
     width: 100%;

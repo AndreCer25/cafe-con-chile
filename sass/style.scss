@@ -473,7 +473,9 @@
 
     .seccion-2-Box2 {flex-direction: column;}
 
-    .seccion-1-Box3 {flex-direction: column;}}
+    .seccion-1-Box3 {flex-direction: column;}
+
+    #formulario {padding: 0 20px 30px;}}
 
 @media (min-width:600px) and (max-width: 768px) {
     #entradasBlog {
@@ -526,6 +528,10 @@
     #quienesSomos {padding-top: 30px;}
     #glosario {padding-top: 30px;}
     #contacto {padding-top: 30px;}
+
+    #nosotrosCarrusel {text-align: center;}
+
+    .container-fluid {padding: 10px 0;}
 
     .navbar img {width: 100%;
         height: auto;}
