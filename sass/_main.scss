@@ -1,0 +1,112 @@
+/*Estilos del Main*/
+
+#main {min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;}
+
+#slider {width: 100%;}
+
+.botones {background-color: #14B6CC;
+    border-style: none;
+    border-radius: 20px;
+    padding: 20px 50px;
+    font-size: 20px;
+    font-family: josefin sans;}
+
+.botones a {
+    text-decoration: none;
+    color:white}
+
+.botones:hover {
+    background-color:#E6701A;
+    transition: 0.1s;}
+
+#seccion-1 {width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap:20px;}
+
+.seccion-1-Box1 {width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;}
+
+.seccion-1-Box1 p {width: 50%;}
+
+.separador {background: #E6701A;
+    height: 2px;
+    width: 20vw;
+    margin: 0 auto;}
+
+.seccion-1-Box2 {width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;}
+
+.seccion-1-Box3 {width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;}
+
+.tiktok-embed{overflow: scroll;}
+
+#banner-inicio {position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../imagenes/banner-inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;}
+
+.titulosBanners {width: 100%;
+    color: white;
+    font-weight: 900;
+    -webkit-text-stroke: 0.1px rgba(0, 0, 0, 0.753);
+    display: flex;
+    justify-content: center;
+    z-index: 2;}
+
+#seccion-2 {width: 100%;
+    height: auto;
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;}
+
+.seccion-2-Box1 {width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+
+.seccion-2-Box2 {width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;}
+
+.seccion-2-Box2 img {height: 100%; width: 500px; padding-top: 30px;}
+
+#carouselExampleAutoplaying {width: 70%;}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    left: -40px;}
+
+.carousel-control-next-icon {
+    position: absolute;
+    right: -40px;}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color:rgba(0, 0, 0, 0.256);}

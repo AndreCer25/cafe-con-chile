@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+/*Estilos del Body*/
+#body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
 /*Tipografía header, body y footer*/
 #header, #body, #footer {
   font-family: "Josefin Sans", sans-serif;
@@ -18,69 +25,6 @@
   align-self: center;
   color: #52198B;
   font-size: 40px;
-}
-
-/*Estilos del Body*/
-#body {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 70px;
-}
-
-/*Estilos del Nav*/
-#header {
-  width: 100%;
-  height: auto;
-}
-
-.navbar.navbar-expand-lg {
-  max-width: 1440px;
-}
-
-.navbar {
-  background-color: #14B6CC;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  z-index: 5;
-}
-
-.navbar.navbar-expand-lg {
-  padding: 0;
-}
-
-.navbar-nav .nav-link.active {
-  background-color: #E6701A;
-  color: white;
-  border-radius: 3px;
-}
-
-.navbar a:hover {
-  color: #52198B;
-}
-
-.navbar a {
-  display: inline-block;
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  margin-left: 20px;
-  font-size: 20px;
-}
-
-.navbar-brand {
-  width: 15%;
-  height: auto;
-}
-
-.navbar img {
-  width: 70%;
-  height: auto;
-}
-
-.container-fluid {
-  padding: 0 0;
 }
 
 /*Estilos del Main*/
@@ -236,6 +180,62 @@
   background-color: rgba(0, 0, 0, 0.256);
 }
 
+/*Estilos del Nav*/
+#header {
+  width: 100%;
+  height: auto;
+}
+
+.navbar.navbar-expand-lg {
+  max-width: 1440px;
+}
+
+.navbar {
+  background-color: #14B6CC;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.navbar.navbar-expand-lg {
+  padding: 0;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #E6701A;
+  color: white;
+  border-radius: 3px;
+}
+
+.navbar a:hover {
+  color: #52198B;
+}
+
+.navbar a {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  width: 15%;
+  height: auto;
+}
+
+.navbar img {
+  width: 70%;
+  height: auto;
+}
+
+.container-fluid {
+  padding: 0 0;
+}
+
 /*Estilos de Experiencias*/
 #experiencias {
   width: 100%;
@@ -369,6 +369,15 @@
 .fotos {
   width: 30%;
   border-radius: 50%;
+  transition: 0.1s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.fotos:hover {
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
 }
 
 .nosotros2 {

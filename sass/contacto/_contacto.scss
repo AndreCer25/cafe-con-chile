@@ -1,0 +1,35 @@
+// Estilos de Contacto
+#contacto {width: 100%;
+    height: auto;
+    padding: 80px 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;}
+
+.contacto1 {width: 100%;
+    height: auto;
+    padding-top: 20px;}
+
+#formulario {width: 100%;
+    height: auto;
+    padding: 0 50px 30px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    text-align: left;}
+
+.btn-primary {
+    color:white;
+    background-color:#E6701A;
+    border-color:#E6701A;}
+
+.btn-primary:hover {
+    background-color:#52198B;
+    border-color:#52198B;}
+
+.btn-primary:active {
+    background-color:#52198B;
+    border-color:#52198B;}
+
+.form-control {background-color: #d9ddde5b;}

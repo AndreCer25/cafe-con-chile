@@ -1,0 +1,67 @@
+/*Estilos de Quienes somos*/
+#quienesSomos {width: 100%;
+    height: auto;
+    padding: 80px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;}
+
+#nosotros {width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap:20px;}
+
+.nosotros1 {width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+    gap: 30px;}
+
+.fotos {width: 30%;
+    border-radius: 50%;
+    transition: .10s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;}
+
+.fotos:hover {transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);}
+              
+
+.nosotros2 {width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px 0;
+    gap: 30px;}
+
+#bannerNosotros {position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../imagenes/banner-nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;}
+
+#nosotrosCarrusel {width: 100%;
+    height: auto;
+    padding: 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;}
+
+.nosotros3 { width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;}

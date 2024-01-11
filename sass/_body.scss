@@ -1,0 +1,15 @@
+/*Estilos del Body*/
+#body {max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 70px;}
+
+/*Tipografía header, body y footer*/
+#header, #body, #footer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;}
+
+/*Tipografía títulos*/
+.titulos {font-family: 'Lobster Two', sans-serif;
+    align-self: center;
+    color: #52198B;
+    font-size: 40px;}

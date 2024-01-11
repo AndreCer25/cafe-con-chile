@@ -1,0 +1,35 @@
+/*Estilos Footer*/
+#footer {margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: #D9DDDE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;}
+
+.footerLogo a {font-size: 20px; color: black;
+    text-decoration: none;}
+
+.footerLogo {width: 20%;
+    display:flex;
+    align-items: left;}
+
+.footerLogo img {width: 50%;}
+
+.footerTexto {width: 60%;
+    font-size: 20px; color: black;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;}
+
+.footerRedes a {width: 20%;
+    font-size: 30px;
+    color: black; 
+    width: 60px;
+    padding: 5px;
+    text-align: center;}
+
+.footerRedes {display: flex;
+    justify-content: center;
+    align-items: center;}
