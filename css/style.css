@@ -33,6 +33,10 @@
   height: auto;
 }
 
+.navbar.navbar-expand-lg {
+  max-width: 1440px;
+}
+
 .navbar {
   background-color: #14B6CC;
   width: 100%;
