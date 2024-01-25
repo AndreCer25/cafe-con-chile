@@ -1,3 +1,7 @@
+@mixin efectoGrow {transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;}
+
 /*Estilos del Main*/
 
 #main {min-height: 100vh;
@@ -15,7 +19,8 @@
     border-radius: 20px;
     padding: 20px 50px;
     font-size: 20px;
-    font-family: josefin sans;}
+    font-family: josefin sans;
+    @include efectoGrow;}
 
 .botones a {
     text-decoration: none;
@@ -23,10 +28,11 @@
 
 .botones:hover {
     background-color:#E6701A;
-    transition: 0.1s;}
+    transform: scale(1.06, 1.06);}
 
 #seccion-1 {width: 100%;
     height: auto;
+    padding: 0 20px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -55,7 +61,8 @@
 .seccion-1-Box3 {width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-around;}
+    justify-content: space-around;
+    gap: 20px;}
 
 .tiktok-embed{overflow: scroll;}
 

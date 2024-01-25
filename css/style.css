@@ -49,6 +49,9 @@
   padding: 20px 50px;
   font-size: 20px;
   font-family: josefin sans;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
 .botones a {
@@ -58,12 +61,13 @@
 
 .botones:hover {
   background-color: #E6701A;
-  transition: 0.1s;
+  transform: scale(1.06, 1.06);
 }
 
 #seccion-1 {
   width: 100%;
   height: auto;
+  padding: 0 20px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -103,6 +107,7 @@
   height: auto;
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .tiktok-embed {
@@ -253,6 +258,10 @@
   color: white;
   border-radius: 10px;
   padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 #entradasBlog {
@@ -290,21 +299,25 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .entradas {
   position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.281);
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
-.categorias {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.entradas:hover {
+  transform: scale(1.06, 1.06);
 }
 
 .tituloEntrada {
   text-align: center;
+  padding-top: 10px;
 }
 
 #banner-experiencias {
@@ -353,7 +366,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .nosotros1 {
@@ -367,7 +380,7 @@
 }
 
 .fotos {
-  width: 30%;
+  width: 25%;
   border-radius: 50%;
   transition: 0.1s, color 0.1s;
   -webkit-transition: 0.5s, color 0.1s;
@@ -375,9 +388,17 @@
 }
 
 .fotos:hover {
-  transform: rotateY(360deg);
-  -webkit-transform: rotateY(360deg);
-  -moz-transform: rotateY(360deg);
+  transform: translatex(-20px);
+  -webkit-transform: translatex(-20px);
+  -moz-transform: translatex(-20px);
+}
+
+.fotoAndrea {
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.281);
+}
+
+.fotoCarlos {
+  box-shadow: -10px 0 15px rgba(0, 0, 0, 0.281);
 }
 
 .nosotros2 {
@@ -386,7 +407,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 20px 0;
+  padding: 0 20px 0;
   gap: 30px;
 }
 
@@ -537,11 +558,15 @@
   color: white;
   background-color: #E6701A;
   border-color: #E6701A;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
 .btn-primary:hover {
   background-color: #52198B;
   border-color: #52198B;
+  transform: scale(1.06, 1.06);
 }
 
 .btn-primary:active {
@@ -728,14 +753,20 @@
   .titulos {
     text-align: center;
   }
+  #nosotros {
+    gap: 20px;
+  }
   .nosotros1 {
     flex-direction: column;
+    gap: 10px;
   }
   .nosotros2 {
     flex-direction: column;
+    gap: 10px;
   }
   .fotos {
     width: 60%;
+    box-shadow: 0 0px 15px 10px rgba(0, 0, 0, 0.281);
   }
   .fotoCarlos {
     order: 1;

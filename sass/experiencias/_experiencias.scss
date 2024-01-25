@@ -1,3 +1,7 @@
+@mixin efectoGrow {transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;}
+
 /*Estilos de Experiencias*/
 #experiencias {width: 100%;
     height: auto;
@@ -11,7 +15,11 @@
     background-color: #E6701A;
     color:white;
     border-radius: 10px;
-    padding: 10px;}
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;}
 
 #entradasBlog {height: auto;
     padding: 20px;
@@ -36,17 +44,18 @@
 
 .entradas img {width: 100%;
     height: auto;
-    object-fit: cover;}
+    object-fit: cover;
+    border-radius: 10px 10px 0 0 ;}
 
-.entradas {position: relative;}
+.entradas {position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.281);
+    @include efectoGrow;}
 
-.categorias {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;}
+.entradas:hover {transform: scale(1.06, 1.06);}
 
-.tituloEntrada {text-align: center;}
+.tituloEntrada {text-align: center;
+    padding-top: 10px;}
 
 #banner-experiencias {position: relative;
     width: 100%;

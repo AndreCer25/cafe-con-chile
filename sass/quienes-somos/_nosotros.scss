@@ -12,7 +12,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap:20px;}
+    gap:10px;}
 
 .nosotros1 {width: 100%;
     height: auto;
@@ -22,23 +22,27 @@
     padding: 20px 20px 0 20px;
     gap: 30px;}
 
-.fotos {width: 30%;
+.fotos {width: 25%;
     border-radius: 50%;
     transition: .10s, color .10s;
     -webkit-transition: .5s, color .10s;
     -moz-transition: .5s, color .10s;}
 
-.fotos:hover {transform: rotateY(360deg);
-    -webkit-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);}
-              
+.fotos:hover {
+    transform: translatex(-20px);
+    -webkit-transform: translatex(-20px);
+    -moz-transform: translatex(-20px);}
+
+.fotoAndrea {box-shadow: 10px 0 15px rgba(0, 0, 0, 0.281);}
+
+.fotoCarlos {box-shadow: -10px 0 15px rgba(0, 0, 0, 0.281);}
 
 .nosotros2 {width: 100%;
     height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 20px 0;
+    padding: 0 20px 0;
     gap: 30px;}
 
 #bannerNosotros {position: relative;

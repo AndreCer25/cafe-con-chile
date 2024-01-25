@@ -15,8 +15,11 @@
         "entrada5";}
 
     #experiencias {padding-top: 30px;}
+
     #quienesSomos {padding-top: 30px;}
+
     #glosario {padding-top: 30px;}
+
     #contacto {padding-top: 30px;}
     
     #footer {flex-direction: column;}
@@ -54,8 +57,11 @@
         "entrada5 .";}
 
     #experiencias {padding-top: 30px;}
+
     #quienesSomos {padding-top: 30px;}
+
     #glosario {padding-top: 30px;}
+
     #contacto {padding-top: 30px;}
 
     .navbar img {width: 100%;
@@ -63,8 +69,11 @@
 
 @media (max-width:768px) {
     #experiencias {padding-top: 30px;}
+
     #quienesSomos {padding-top: 30px;}
+
     #glosario {padding-top: 30px;}
+
     #contacto {padding-top: 30px;}
 
     .navbar img {width: 100%;
@@ -72,6 +81,7 @@
 
     .seccion-1-Box3 {flex-direction: column;
     align-items: center;}
+
     .seccion-1-Box1 {flex-direction: column;
         text-align: center;}
 
@@ -82,18 +92,26 @@
 
     .titulos {text-align: center;}
 
-    .nosotros1 {flex-direction: column;}
+    #nosotros {gap: 20px;}
+    
+    .nosotros1 {flex-direction: column;
+        gap: 10px;}
 
-    .nosotros2 {flex-direction: column;}
+    .nosotros2 {flex-direction: column;
+        gap: 10px;}
 
-    .fotos {width: 60%;}
+    .fotos {width: 60%;
+        box-shadow: 0 0px 15px 10px rgba(0, 0, 0, 0.281);}
 
     .fotoCarlos {order: 1;}}
 
 @media (max-width:420px) {
     #experiencias {padding-top: 30px;}
+
     #quienesSomos {padding-top: 30px;}
+
     #glosario {padding-top: 30px;}
+
     #contacto {padding-top: 30px;}
 
     #nosotrosCarrusel {text-align: center;}

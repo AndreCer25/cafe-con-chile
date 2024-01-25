@@ -1,3 +1,7 @@
+@mixin efectoGrow {transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;}
+
 // Estilos de Contacto
 #contacto {width: 100%;
     height: auto;
@@ -22,11 +26,13 @@
 .btn-primary {
     color:white;
     background-color:#E6701A;
-    border-color:#E6701A;}
+    border-color:#E6701A;
+    @include efectoGrow;}
 
 .btn-primary:hover {
     background-color:#52198B;
-    border-color:#52198B;}
+    border-color:#52198B;
+    transform: scale(1.06, 1.06);}
 
 .btn-primary:active {
     background-color:#52198B;
